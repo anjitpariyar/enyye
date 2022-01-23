@@ -1,10 +1,18 @@
 import React from "react";
 import { HeadStyle } from "./styled/HeadStyle.styled";
+import { Container } from "../../../styled/Container";
+
+// component
+import Logo from "./Icon/Logo";
 
 const Header = () => {
   return (
     <>
-      <HeadStyle>I am Header</HeadStyle>
+      <HeadStyle>
+        <Container>
+          <Logo />
+        </Container>
+      </HeadStyle>
     </>
   );
 };

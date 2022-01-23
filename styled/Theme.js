@@ -7,6 +7,7 @@ export const theme = {
   black: "#000",
   grey: "#7F7F7F",
   lightGrey: "#EBECED",
+  yellow: "#F7A01E",
 
   //Font Weights
   fntWgtRegular: "400",
