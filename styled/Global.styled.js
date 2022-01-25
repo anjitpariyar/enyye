@@ -9,6 +9,7 @@ const Global = createGlobalStyle`
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

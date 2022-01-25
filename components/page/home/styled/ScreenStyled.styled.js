@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   position: relative;
+  height: 100vh;
+  background-color: ${({ theme }) => theme.black};
+  scroll-snap-align: start;
 `;
 
 export const Title = styled.h2``;
@@ -30,4 +33,9 @@ export const Para = styled.p`
 
 export const CardSmall = styled.div`
   position: relative;
+`;
+export const Main = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
 `;
