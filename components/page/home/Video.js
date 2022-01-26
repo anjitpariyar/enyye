@@ -4,6 +4,8 @@ import { VideoWrapper } from "./styled/VideoStyled.styled";
 import { useInView } from "react-intersection-observer";
 
 const Video = ({ videoId }) => {
+  const [player, setPlayer] = useState(null);
+
   const opts = {
     height: "100%",
     width: "100%",
@@ -13,7 +15,7 @@ const Video = ({ videoId }) => {
       controls: 1,
     },
   };
-  const [player, setPlayer] = useState(null);
+
   const ready = (event) => {
     console.log("Video Ready");
     console.log("event?.target", event?.target);
@@ -21,6 +23,7 @@ const Video = ({ videoId }) => {
   };
   const play = (event) => {
     console.log("Video play");
+    setPlayer(event?.target);
   };
   const pause = (event) => {
     console.log("Video pause");

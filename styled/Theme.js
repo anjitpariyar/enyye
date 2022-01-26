@@ -8,6 +8,7 @@ export const theme = {
   grey: "#7F7F7F",
   lightGrey: "#EBECED",
   yellow: "#F7A01E",
+  white: "#FFFFFF",
 
   //Font Weights
   fntWgtRegular: "400",

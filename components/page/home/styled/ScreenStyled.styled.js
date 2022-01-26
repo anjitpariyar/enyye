@@ -35,7 +35,15 @@ export const CardSmall = styled.div`
   position: relative;
 `;
 export const Main = styled.div`
-  display: flex;
   height: 100%;
-  align-items: center;
+  width: 100%;
+  .slick-slider,
+  .slick-list,
+  .slick-track,
+  .slick-slide > div {
+    height: 100%;
+  }
+`;
+export const Height = styled.div`
+  height: 100%;
 `;

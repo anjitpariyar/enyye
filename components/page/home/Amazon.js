@@ -10,7 +10,7 @@ const Amazon = () => {
         <Flex href="#!">
           <Image>
             <NextImage
-              height="70px"
+              height="50px"
               layout="contain"
               src="https://res.cloudinary.com/dem2xvk2e/image/upload/v1642933031/upwork/amazon-buy-button_1_pv70xg.png"
             />
