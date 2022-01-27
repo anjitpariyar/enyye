@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  position: absolute;
+  /* position: absolute; */
   padding: 0;
   bottom: 0;
   left: 0;

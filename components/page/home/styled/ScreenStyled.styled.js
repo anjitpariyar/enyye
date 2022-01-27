@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 56px);
   background-color: ${({ theme }) => theme.black};
   scroll-snap-align: start;
 `;
@@ -28,7 +28,9 @@ export const VideoCard = styled.div`
   flex-grow: 2;
 `;
 export const Para = styled.p`
-  margin-top: 0;
+  margin: 0;
+  color: ${(props) => props.theme.white};
+  font-size: 14px;
 `;
 
 export const CardSmall = styled.div`
@@ -37,6 +39,10 @@ export const CardSmall = styled.div`
 export const Main = styled.div`
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: flex-end;
   .slick-slider,
   .slick-list,
   .slick-track,

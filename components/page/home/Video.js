@@ -17,19 +17,19 @@ const Video = ({ videoId }) => {
   };
 
   const ready = (event) => {
-    console.log("Video Ready");
-    console.log("event?.target", event?.target);
+    // console.log("Video Ready");
+    // console.log("event?.target", event?.target);
     setPlayer(event?.target);
   };
   const play = (event) => {
-    console.log("Video play");
+    // console.log("Video play");
     setPlayer(event?.target);
   };
   const pause = (event) => {
-    console.log("Video pause");
+    // console.log("Video pause");
   };
   const end = (event) => {
-    console.log("Video end");
+    // console.log("Video end");
   };
   const { ref, inView } = useInView({
     /* Optional options */
@@ -42,7 +42,7 @@ const Video = ({ videoId }) => {
     // console.log("Video view", inView);
     if (player) {
       if (inView) {
-        console.log("ref", videoRef?.current?.refs);
+        // console.log("ref", videoRef?.current?.refs);
       } else {
         // videoRef?.current
         player.pauseVideo();

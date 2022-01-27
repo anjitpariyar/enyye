@@ -13,15 +13,15 @@ import {
   Height,
 } from "./styled/ScreenStyled.styled";
 import { Container } from "../../../styled/Container";
-import NextImage from "../../layouts/image/NextImage";
 import Slider from "react-slick";
 import PrevArrow from "../../arrow/PrevArrow";
 import NextArrow from "../../arrow/NextArrow";
 import Amazon from "./Amazon";
+import Photo from "./Photo";
 
 const Screen = ({ videoId }) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -35,13 +35,19 @@ const Screen = ({ videoId }) => {
     <Section>
       <Container>
         <Main>
-          <Slider {...settings}>
-            {[...Array(3)].map((x, i) => (
-              <Height style={{ height: "100%" }} key={i}>
-                <Video videoId={videoId} />
-              </Height>
-            ))}
-          </Slider>
+          <div>
+            <Para>
+              Click on Next arrow for next video and swip down for next phone
+            </Para>
+            <Slider {...settings}>
+              {videoId.map((video, i) => (
+                <Height style={{ height: "100%" }} key={i}>
+                  <Video videoId={video} />
+                </Height>
+              ))}
+            </Slider>
+          </div>
+          <Photo />
           <Amazon />
         </Main>
       </Container>

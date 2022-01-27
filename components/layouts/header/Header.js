@@ -1,6 +1,7 @@
 import React from "react";
 import { HeadStyle } from "./styled/HeadStyle.styled";
 import { Container } from "../../../styled/Container";
+import Link from "next/Link";
 
 // component
 import Logo from "./Icon/Logo";
@@ -10,7 +11,11 @@ const Header = () => {
     <>
       <HeadStyle>
         <Container>
-          <Logo />
+          <Link href="/">
+            <a>
+              <Logo />
+            </a>
+          </Link>
         </Container>
       </HeadStyle>
     </>
